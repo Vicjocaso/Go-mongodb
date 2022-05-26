@@ -1,21 +1,25 @@
 package repo
 
 import (
-	m "../../models"
+	"github.com/Vicjocaso/Go-mongodb/models"
 )
 
-func Create(user m.User) error {
+func Create(user models.User) error {
 	return nil
 }
 
-func Read() m.Users {
+func Read() ([]models.User, error) {
+
+	var US []models.User
+	res := models.User{ID: "123", Name: "hleas", Email: "vi@gdf.com"}
+	algo := append(US, res)
+	return algo, nil
+}
+
+func Update(user models.User, userId string) error {
 	return nil
 }
 
-func Update() error {
-	return nil
-}
-
-func Delete() error {
+func Delete(userId string) error {
 	return nil
 }

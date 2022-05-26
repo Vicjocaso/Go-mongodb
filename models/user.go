@@ -10,6 +10,3 @@ type User struct {
 	CreateAt time.Time `json:"create_at"`
 	UpdateAt time.Time `json:"update_at,omitempty"`
 }
-
-//User List
-type Users []User
