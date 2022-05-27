@@ -11,7 +11,7 @@ var database = "Cluster0"
 
 func GetCollection(conllection string) *mongo.Collection {
 
-	uri := "mongodb+srv://Vicjocaso:Admin123@cluster0.ghnre.mongodb.net/?retryWrites=true&w=majority"
+	uri := "Uri MongoConnection string "
 
 	client, err := mongo.Connect(context.TODO(), options.Client().ApplyURI(uri))
 	if err != nil {
