@@ -2,7 +2,7 @@ package gomongodb
 
 import (
 	"github.com/Vicjocaso/Go-mongodb/models"
-	repo "github.com/Vicjocaso/Go-mongodb/repo"
+	repo "github.com/Vicjocaso/Go-mongodb/repos"
 )
 
 func Create(user models.User) error {
@@ -13,7 +13,7 @@ func Create(user models.User) error {
 	return nil
 }
 
-func Read() ([]models.User, error) {
+func Read() (models.Users, error) {
 
 	users, err := repo.Read()
 	if err != nil {
